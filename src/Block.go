@@ -2,6 +2,8 @@ package main
 
 type Block struct{
 	Chain string			`json:"chain"`
+	Epoch uint				`json:"epoch"`
+	Version float32			`json:"version"`
 	Height int64			`json:"heigh"`
 	Time uint64				`json:"time"`
 	Hash string				`json:"hash"`
@@ -10,4 +12,5 @@ type Block struct{
 	Data []interface{}		`json:"data"`
 	Options	int 			`json:"options"`
 	Finalizer string		`json:"finalizer"`
+	Algorithm string 		`json:"algorithm"`
 }

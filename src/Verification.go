@@ -4,11 +4,12 @@ type Verification struct{
 	//block data
 	Hash string 			`json:"hash"`
 	Model string 			`json:"model"`
+	Algo string 			`json:"algo"`
 	//body
 	Node string 			`json:"node"`
 	Account string 			`json:"account"`
 	Type int 				`json:"type"`
-	Time uint64 				`json:"time"`
+	Time uint64				`json:"time"`
 	Signature string 		`json:"signature"`
 }
 

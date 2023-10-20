@@ -7,6 +7,8 @@ type Node struct{
 	Chains []string 			`json:"chains"`
 	Draft []interface{}			`json:"draft"`
 	Inbox []interface{}			`json:"inbox"`
+	SupportedAlgos []string 	`json:"supportedAlgos"`
+	DefaultAlgo string 			`json:"defaultAlgo"`
 }
 
 const NODE_TYPE_FINALIZER 		= 1

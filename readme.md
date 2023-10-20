@@ -36,6 +36,8 @@ Block Structure used to store data in order and make the network decenteralized.
 | Property | Description |
 |----------|-------------|
 | chain | keep chain to specify the block belongs to which chain |
+| Epoch | block belongs to which blockchain epoch |
+| Version | network version |
 | height | block height is the block index starting from 0 |
 | time | block close time |
 | hash | block unique hash id |

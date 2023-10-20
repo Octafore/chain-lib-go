@@ -5,4 +5,5 @@ type Account struct{
 	Seed string 		`json:"seed"`
 	Key	string			`json:"key"`
 	PKey string 		`json:"pkey"`
+	Algorithm string 	`json:"algorithm"`
 }

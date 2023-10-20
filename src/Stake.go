@@ -4,6 +4,7 @@ type Stake struct{
 	//block data
 	Hash string 					`json:"hash"`
 	Model string					`json:"model"`
+	Algo string 					`json:"algo"`
 	//
 	OwnerAccount string				`json:"ownerAccount"`
 	RedeemAccount string			`json:"redeemAccount"`
