@@ -1,10 +1,7 @@
 package main
 
 type TX struct{
-	//block data
-	Hash string					`json:"hash"`
-	Model string 				`json:"model"`
-	Algo string 				`json:"algo"`
+	BlockData
 	//body
 	Block string				`json:"block"`
 	Time uint64					`json:"time"`

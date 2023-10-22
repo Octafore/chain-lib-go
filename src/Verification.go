@@ -1,15 +1,14 @@
 package main
 
+import "time"
+
 type Verification struct{
-	//block data
-	Hash string 			`json:"hash"`
-	Model string 			`json:"model"`
-	Algo string 			`json:"algo"`
+	NetData
 	//body
 	Node string 			`json:"node"`
-	Account string 			`json:"account"`
 	Type int 				`json:"type"`
-	Time uint64				`json:"time"`
+	Created uint64			`json:"created"`
+	Modified uint64			`json:"modified"`
 	Signature string 		`json:"signature"`
 }
 
@@ -19,7 +18,11 @@ const VERIFICATION_TYPE_BUSINESS_DOCS	= 4
 
 func VerificationCreate() Verification{
 	var ret Verification
-	ret.Hash = "Invalid"
+	ret.ID = "Invalid"
 	ret.Model = "Verification"
+	ret.Account = "Invalid"
+	ret.Signature = "Invalid"
+	ret.Created = uint64(time.Now().Unix()) 
+	ret.Modified = ret.Created
 	return ret
 }

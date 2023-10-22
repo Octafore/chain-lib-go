@@ -14,3 +14,11 @@ type Block struct{
 	Finalizer string		`json:"finalizer"`
 	Algorithm string 		`json:"algorithm"`
 }
+
+func BlockCreate(chain Chain) Block{
+	var ret Block
+	ret.Hash = "Invalid"
+	ret.Chain = chain.ID
+	ret.Version = chain.Version
+	return ret
+}

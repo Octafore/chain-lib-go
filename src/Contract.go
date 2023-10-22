@@ -1,10 +1,7 @@
 package main
 
 type Contract struct{
-	//block data
-	Hash string					`json:"hash"`
-	Model string				`json:"model"`
-	Algo string 				`json:"algo"`
+	BlockData
 	//
 	Account string				`json:"account"`
 	Time uint64					`json:"time"`

@@ -1,5 +1,7 @@
 package main
 
+// block data and it's children will store inside the block
+
 type BlockData struct{
 	Hash string 				`json:"hash"`
 	Model string				`json:"model"`
