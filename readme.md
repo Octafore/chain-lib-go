@@ -7,6 +7,15 @@
 - TX Share
 
 ---
+## Package:
+All the information from client app to high level node must transfer inside Package Object and json Format. Package Object consists of:
+
+| Property | Description |
+|----------|-------------|
+| payload | array of Objects like TX, Block, Message .... |
+| senderId | node Id or API Key  |
+| senderSignature | signature of (payload json)  |
+
 
 ## Account:
 Account class is use to provide access and keep information about an account and consists of following properties:
