@@ -39,6 +39,19 @@ Node class is main container of every network node. it specifies the node behavi
 | draft | incomming data from other nodes |
 | inbox | finailized data from other nodes  to store and indexing |
 
+## Block Data:
+Block data based objects are object those store inside block
+
+| Property | Description |
+|----------|-------------|
+| hash | unique hash for the object |
+| model | type name of the object like TX |
+| algo | hashing (and signature) algorithm |
+
+
+## NetData:
+Net data base objects are objects those transfer through the network and store inside different storage type like FS or Database. they may be editable/removable by the owner or permission users but not store inside blocks itself. some of them may expire after specific time and remove from the whole network
+
 ## Block:
 Block Structure used to store data in order and make the network decenteralized.
 
