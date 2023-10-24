@@ -13,8 +13,9 @@ type NetData struct{
 
 func NetDataCreate() NetData{
 	var ret NetData
-	ret.Model = "BlockData"
 	ret.ID = "Invalid"
+	ret.Model = "BlockData"
+	ret.Account = "Invalid"
 	ret.Signature = "Invalid"
 	return ret
 }
